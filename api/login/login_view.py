@@ -30,7 +30,7 @@ def login_view(request):
             except User.DoesNotExist:
                 pass
             
-            return render(request, template_name, {'error': 'Credenciales invalidas'})
+            return render(request, template_name, {'error': 'Invalid login credentials'})
 
     return render(request, template_name)
 #verifica si el usuario ya esta autenticado 
